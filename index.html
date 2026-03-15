@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="D.support - クリニックの開業から閉院まで、地域医療を支えるパートナー。経験豊富な専門家が先生の新しいスタートをサポートします。">
+  <title>D.support | クリニック開業・閉院サポート - 地域医療のために</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Noto+Serif+JP:wght@600;700;900&display=swap" rel="stylesheet">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Grain Overlay -->
+  <div class="grain"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="D.support">
+        <span class="logo-text">D.support</span>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="pages/kaigyou.html" class="nav-link">開業サポート</a></li>
+          <li><a href="pages/heiin.html" class="nav-link">閉院サポート</a></li>
+          <li><a href="pages/keishou.html" class="nav-link">継承サポート</a></li>
+          <li><a href="#testimonials" class="nav-link">お客様の声</a></li>
+          <li><a href="#about" class="nav-link">会社概要</a></li>
+        </ul>
+        <a href="pages/contact.html" class="btn btn-primary btn-magnetic">無料相談</a>
+
+        <button class="mobile-menu-btn" aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Video Background -->
+    <div class="hero-video-container">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="images/dsupport-movie.mp4" type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
+    </div>
+
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          <span class="hero-box hero-box-white">クリニックの開業から閉院まで</span>
+          <span class="hero-box hero-box-blue">未来を共に創る</span>
+        </h1>
+
+        <div class="hero-buttons">
+          <a href="pages/contact.html" class="btn btn-primary btn-lg btn-magnetic">
+            無料相談を予約
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-outline btn-lg">サービスを見る</a>
+        </div>
+        <p class="hero-benefits">
+          開業準備から資金調達、届出手続き、スタッフ採用まで。経験豊富な専門家がワンストップでサポートし、先生の負担を軽減します。
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Tagline Section -->
+  <section class="tagline-section">
+    <div class="container">
+      <div class="tagline-grid">
+        <div class="tagline-item">
+          <span class="tagline-number">500+</span>
+          <span class="tagline-label">開業支援実績</span>
+        </div>
+        <div class="tagline-item">
+          <span class="tagline-number">15年</span>
+          <span class="tagline-label">サポート実績</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <header class="services-header">
+        <span class="text-caption">Our Services</span>
+        <h2 class="text-display" style="margin-top: var(--space-sm);">3つのサポート領域</h2>
+        <p style="margin-top: var(--space-sm); max-width: 550px; margin-left: auto; margin-right: auto; color: var(--color-text-secondary);">
+          開業から閉院まで、クリニック経営のあらゆるフェーズに対応。<br>
+          先生のご状況に合わせた最適なサポートをご提案します。
+        </p>
+      </header>
+
+      <div class="services-grid">
+        <!-- 開業サポート -->
+        <article class="service-card">
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="service-title">開業サポート</h3>
+            <p class="service-description">
+              事業計画の策定から物件選定、資金調達、行政手続き、スタッフ採用まで。
+              理想のクリニック開業を実現します。
+            </p>
+            <a href="pages/kaigyou.html" class="service-link">
+              詳しく見る
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 閉院サポート -->
+        <article class="service-card">
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M9 9l6 6M15 9l-6 6"/>
+              </svg>
+            </div>
+            <h3 class="service-title">閉院サポート</h3>
+            <p class="service-description">
+              複雑な行政手続き、スタッフ・患者対応、医療機器処分まで。
+              閉院の負担を最小限に抑えます。
+            </p>
+            <a href="pages/heiin.html" class="service-link">
+              詳しく見る
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 継承サポート -->
+        <article class="service-card">
+          <div class="service-card-content">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="service-title">継承サポート</h3>
+            <p class="service-description">
+              地域医療を次世代へ。後継者探しから価値評価、契約締結まで、
+              スムーズな継承を実現します。
+            </p>
+            <a href="pages/keishou.html" class="service-link">
+              詳しく見る
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features-section">
+    <div class="container">
+      <header class="features-header">
+        <span class="text-caption">Why Choose Us</span>
+        <h2 class="text-display" style="margin-top: var(--space-sm);">D.supportが選ばれる理由</h2>
+      </header>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>医療専門チーム</h3>
+            <p>医療業界に精通した専門コンサルタントが、先生のパートナーとして伴走します。</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>ワンストップ対応</h3>
+            <p>開業から閉院まで、すべてのフェーズに対応。複数の業者への依頼は不要です。</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>地域医療への貢献</h3>
+            <p>地域の医療を守ることを第一に。継承支援で医療資源を次世代へつなぎます。</p>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <div class="feature-content">
+            <h3>豊富な実績</h3>
+            <p>500件以上の開業支援実績。蓄積されたノウハウで確実にサポートします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section process-section">
+    <div class="container">
+      <header class="services-header">
+        <span class="text-caption">How It Works</span>
+        <h2 class="text-display" style="margin-top: var(--space-sm);">ご相談からサポートまでの流れ</h2>
+      </header>
+
+      <div class="process-timeline">
+        <div class="process-item">
+          <div class="process-content">
+            <h3 class="process-title">無料相談</h3>
+            <p class="process-description">まずはお気軽にご相談ください。現在のご状況をお伺いします。</p>
+          </div>
+          <div class="process-marker">1</div>
+          <div class="process-empty"></div>
+        </div>
+
+        <div class="process-item">
+          <div class="process-empty"></div>
+          <div class="process-marker">2</div>
+          <div class="process-content">
+            <h3 class="process-title">プラン提案</h3>
+            <p class="process-description">ご状況に応じた最適なプランをご提案いたします。</p>
+          </div>
+        </div>
+
+        <div class="process-item">
+          <div class="process-content">
+            <h3 class="process-title">契約・着手</h3>
+            <p class="process-description">ご納得いただけましたら正式契約。サポートを開始します。</p>
+          </div>
+          <div class="process-marker">3</div>
+          <div class="process-empty"></div>
+        </div>
+
+        <div class="process-item">
+          <div class="process-empty"></div>
+          <div class="process-marker">4</div>
+          <div class="process-content">
+            <h3 class="process-title">伴走サポート</h3>
+            <p class="process-description">目標達成まで専任担当者が継続的にサポートいたします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <header class="services-header">
+        <span class="text-caption">Testimonials</span>
+        <h2 class="text-display" style="margin-top: var(--space-sm);">お客様の声</h2>
+      </header>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card">
+          <p class="testimonial-quote">
+            開業にあたり右も左もわからない状態でしたが、物件選びから資金調達まで親身にサポートしていただきました。おかげさまで理想のクリニックを開業できました。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">T</div>
+            <div class="testimonial-info">
+              <h4>T先生</h4>
+              <p>内科クリニック・開業</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p class="testimonial-quote">
+            閉院か継承か悩んでいましたが、相談の結果、後継者を見つけていただきました。患者さんも引き続き診てもらえて、本当に良かったです。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">Y</div>
+            <div class="testimonial-info">
+              <h4>Y先生</h4>
+              <p>小児科クリニック・継承</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p class="testimonial-quote">
+            閉院手続きの複雑さに途方に暮れていましたが、すべての手続きを代行していただき、スムーズに閉院できました。精神的な負担も軽減されました。
+          </p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div class="testimonial-info">
+              <h4>M先生</h4>
+              <p>整形外科クリニック・閉院</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <img src="images/0_0.jpeg" alt="Clinic" class="cta-bg-image">
+      <div class="cta-bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title reveal">まずは無料相談から</h2>
+        <p class="cta-description reveal">
+          開業・閉院・継承についてのお悩みをお聞かせください。<br>
+          経験豊富な専門スタッフが、最適なご提案をいたします。
+        </p>
+        <div class="cta-buttons reveal">
+          <a href="pages/contact.html" class="btn btn-primary btn-lg btn-magnetic">
+            無料相談を予約する
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="tel:0120-000-000" class="btn btn-outline btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            0120-000-000
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal-left">
+          <span class="text-caption">About Us</span>
+          <h2 class="text-display about-title">地域医療のために</h2>
+          <p class="about-text">
+            D.supportは、「地域医療を守る」という想いのもと設立されました。
+            クリニックの開業を夢見る先生、やむを得ず閉院を検討される先生、
+            次世代に医院を継承したい先生。
+            すべての先生に寄り添い、最適なサポートを提供することで、
+            地域の医療を守り続けます。
+          </p>
+          <p class="about-text">
+            私たちは単なるコンサルタントではありません。
+            先生の想いを理解し、共に歩むパートナーとして、
+            地域医療の未来を創造していきます。
+          </p>
+          <a href="#" class="btn btn-outline">会社概要を見る</a>
+        </div>
+        <div class="about-visual reveal-right">
+          <img src="images/dsupport-image02.jpeg" alt="Clinic Signage" class="about-image-single">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visual Showcase Section -->
+  <section class="section visual-showcase">
+    <div class="showcase-image-wrapper">
+      <img src="images/dsupport-image.jpeg" alt="Modern Clinic Interior" class="showcase-image">
+      <div class="showcase-overlay"></div>
+    </div>
+    <div class="showcase-content">
+      <span class="text-caption">Our Vision</span>
+      <h2 class="showcase-title">理想のクリニックをカタチにする</h2>
+      <p class="showcase-description">
+        洗練されたデザイン、効率的な動線、患者様が安心できる空間づくりをトータルでサポートします。
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="D.support">
+            <span>D.support</span>
+          </div>
+          <p class="footer-tagline">
+            クリニックの開業から閉院まで、<br>地域医療を支えるパートナー
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>サービス</h4>
+          <ul>
+            <li><a href="pages/kaigyou.html">開業サポート</a></li>
+            <li><a href="pages/heiin.html">閉院サポート</a></li>
+            <li><a href="pages/keishou.html">継承サポート</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h4>会社情報</h4>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">代表挨拶</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h4>お問い合わせ</h4>
+          <ul>
+            <li><a href="pages/contact.html">無料相談フォーム</a></li>
+            <li><a href="tel:0120-000-000">0120-000-000</a></li>
+            <li>平日 9:00〜18:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 D.support. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="D.support 無料相談フォーム - クリニックの開業・閉院・継承に関するご相談を受け付けております。">
+  <title>無料相談・お問い合わせ | D.support - クリニック開業・閉院サポート</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <img src="../images/logo.png" alt="D.support">
+        <span class="logo-text">D.support</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="kaigyou.html" class="nav-link">開業サポート</a></li>
+          <li><a href="heiin.html" class="nav-link">閉院サポート</a></li>
+          <li><a href="keishou.html" class="nav-link">継承サポート</a></li>
+          <li><a href="../index.html#cases" class="nav-link">事例紹介</a></li>
+          <li><a href="../index.html#about" class="nav-link">会社概要</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary" style="background: var(--color-primary-dark);">無料相談</a>
+        <button class="mobile-menu-btn" aria-label="メニューを開く">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="page-hero-label reveal">Contact Us</span>
+      <h1 class="page-hero-title reveal">無料相談・お問い合わせ</h1>
+      <p class="page-hero-description reveal">
+        クリニックの開業・閉院・継承に関するご相談を承ります。<br>
+        お気軽にお問い合わせください。
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="gap: var(--spacing-4xl); align-items: start;">
+
+        <!-- Contact Form -->
+        <div class="reveal-left">
+          <form class="contact-form" action="#" method="POST">
+            <h2 style="font-size: 1.5rem; margin-bottom: var(--spacing-xl);">無料相談フォーム</h2>
+
+            <div class="form-group">
+              <label class="form-label">
+                ご相談内容<span class="required">*</span>
+              </label>
+              <div class="form-radio-group">
+                <label class="form-radio">
+                  <input type="radio" name="consultation_type" value="kaigyou" required>
+                  <span>開業について</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="consultation_type" value="heiin">
+                  <span>閉院について</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="consultation_type" value="keishou">
+                  <span>継承について</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="consultation_type" value="other">
+                  <span>その他</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="name">
+                お名前<span class="required">*</span>
+              </label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="山田 太郎" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clinic_name">
+                クリニック名（お持ちの場合）
+              </label>
+              <input type="text" id="clinic_name" name="clinic_name" class="form-input" placeholder="○○クリニック">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">
+                メールアドレス<span class="required">*</span>
+              </label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">
+                電話番号<span class="required">*</span>
+              </label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="090-1234-5678" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="area">
+                開業・クリニック所在エリア
+              </label>
+              <select id="area" name="area" class="form-select">
+                <option value="">選択してください</option>
+                <option value="hokkaido">北海道</option>
+                <option value="tohoku">東北</option>
+                <option value="kanto">関東</option>
+                <option value="chubu">中部</option>
+                <option value="kinki">近畿</option>
+                <option value="chugoku">中国</option>
+                <option value="shikoku">四国</option>
+                <option value="kyushu">九州・沖縄</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="specialty">
+                診療科目
+              </label>
+              <select id="specialty" name="specialty" class="form-select">
+                <option value="">選択してください</option>
+                <option value="naika">内科</option>
+                <option value="shonika">小児科</option>
+                <option value="seikei">整形外科</option>
+                <option value="hifuka">皮膚科</option>
+                <option value="ganka">眼科</option>
+                <option value="jibika">耳鼻咽喉科</option>
+                <option value="sanfujinka">産婦人科</option>
+                <option value="seishin">精神科・心療内科</option>
+                <option value="hinyoki">泌尿器科</option>
+                <option value="shika">歯科</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="current_status">
+                現在のご状況
+              </label>
+              <select id="current_status" name="current_status" class="form-select">
+                <option value="">選択してください</option>
+                <option value="planning">開業を検討中</option>
+                <option value="preparing">開業準備中</option>
+                <option value="operating">現在開業中</option>
+                <option value="considering_close">閉院を検討中</option>
+                <option value="considering_succession">継承を検討中</option>
+                <option value="looking_succession">継承で開業したい</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">
+                ご相談内容の詳細<span class="required">*</span>
+              </label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="ご相談内容をできるだけ詳しくお書きください。" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-radio">
+                <input type="checkbox" name="privacy" required>
+                <span><a href="#" style="color: var(--color-primary); text-decoration: underline;">プライバシーポリシー</a>に同意する</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              無料相談を申し込む
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="reveal-right">
+          <div style="background: var(--color-surface); border-radius: var(--radius-xl); padding: var(--spacing-2xl); box-shadow: var(--shadow-md); margin-bottom: var(--spacing-xl);">
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-lg);">お電話でのご相談</h3>
+            <a href="tel:0120-000-000" style="display: flex; align-items: center; gap: var(--spacing-md); color: var(--color-primary); font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              0120-000-000
+            </a>
+            <p style="color: var(--color-text-secondary); font-size: 0.9375rem;">
+              受付時間：平日 9:00〜18:00<br>
+              （土日祝日を除く）
+            </p>
+          </div>
+
+          <div style="background: var(--color-surface); border-radius: var(--radius-xl); padding: var(--spacing-2xl); box-shadow: var(--shadow-md); margin-bottom: var(--spacing-xl);">
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-lg);">オンライン相談</h3>
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md);">
+              遠方の方でもオンラインでご相談いただけます。
+              ZoomまたはGoogle Meetでの面談が可能です。
+            </p>
+            <div style="display: flex; align-items: center; gap: var(--spacing-sm); color: var(--color-primary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <span style="font-weight: 600;">Zoom / Google Meet 対応</span>
+            </div>
+          </div>
+
+          <div style="background: var(--color-surface); border-radius: var(--radius-xl); padding: var(--spacing-2xl); box-shadow: var(--shadow-md);">
+            <h3 style="font-size: 1.25rem; margin-bottom: var(--spacing-lg);">所在地</h3>
+            <div style="display: flex; gap: var(--spacing-md); color: var(--color-text-secondary);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <p style="margin-bottom: var(--spacing-xs);">
+                  〒100-0001<br>
+                  東京都千代田区○○○ 1-2-3<br>
+                  ○○ビル 5階
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust Badges -->
+          <div style="margin-top: var(--spacing-xl); padding: var(--spacing-lg); background: rgba(26, 74, 122, 0.04); border-radius: var(--radius-lg);">
+            <h4 style="font-size: 0.875rem; color: var(--color-text-tertiary); margin-bottom: var(--spacing-md); text-align: center;">ご相談について</h4>
+            <ul style="color: var(--color-text-secondary); font-size: 0.875rem;">
+              <li style="display: flex; align-items: flex-start; gap: var(--spacing-sm); margin-bottom: var(--spacing-sm);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span>初回相談は<strong>完全無料</strong>です</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--spacing-sm); margin-bottom: var(--spacing-sm);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span>ご相談内容は<strong>厳重に管理</strong>いたします</span>
+              </li>
+              <li style="display: flex; align-items: flex-start; gap: var(--spacing-sm);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="flex-shrink: 0; margin-top: 2px;">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                  <polyline points="22 4 12 14.01 9 11.01"/>
+                </svg>
+                <span>通常<strong>2営業日以内</strong>にご連絡いたします</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section--alt">
+    <div class="container">
+      <header class="section-header">
+        <span class="section-label reveal">FAQ</span>
+        <h2 class="section-title reveal">よくあるご質問</h2>
+      </header>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            相談は本当に無料ですか？
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              はい、初回のご相談は完全無料です。ご状況をお伺いし、どのようなサポートが最適かをご提案いたします。費用が発生するのは正式にご契約いただいてからとなります。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            相談後、必ず契約しないといけませんか？
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              いいえ、ご相談のみでも結構です。ご相談の結果、弊社のサービスがお役に立てないと判断した場合は、正直にお伝えいたします。ご契約は先生にとって最適な選択かどうか、十分にご検討いただいてからで結構です。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            相談内容は外部に漏れませんか？
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              ご相談内容は厳重に管理しております。特に閉院や継承のご相談は、関係者に知られたくないケースも多いと存じます。ご安心ください。
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            返信までどのくらいかかりますか？
+            <span class="faq-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              通常2営業日以内にご連絡いたします。お急ぎの場合は、お電話（0120-000-000）でのご相談をお勧めいたします。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="../images/logo-white.png" alt="D.support">
+            <span>D.support</span>
+          </div>
+          <p class="footer-tagline">クリニックの開業から閉院まで、<br>地域医療を支えるパートナー</p>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">サービス</h4>
+          <ul class="footer-nav-list">
+            <li><a href="kaigyou.html">開業サポート</a></li>
+            <li><a href="heiin.html">閉院サポート</a></li>
+            <li><a href="keishou.html">継承サポート</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">会社情報</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">代表挨拶</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">お問い合わせ</h4>
+          <ul class="footer-nav-list">
+            <li><a href="contact.html">無料相談フォーム</a></li>
+            <li><a href="tel:0120-000-000">0120-000-000</a></li>
+            <li>平日 9:00〜18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2024 D.support. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">利用規約</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
